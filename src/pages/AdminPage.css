@@ -1,0 +1,103 @@
+.admin-page {
+  padding-top: 100px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.admin-card {
+  background: var(--bg-white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-card h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.admin-form .form-group {
+  margin-bottom: 15px;
+}
+
+.admin-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.admin-form input,
+.admin-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-body);
+}
+
+.admin-form input:focus,
+.admin-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.product-list-container {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table th {
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: #f9f9f9;
+}
+
+.admin-table-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 992px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
